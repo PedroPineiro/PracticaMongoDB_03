@@ -1,25 +1,9 @@
 [ {
   "id_xogador" : 1,
-  "nome" : "Jugador 2",
-  "apellidos" : "Apellido 3",
-  "posicion" : "Defensa",
-  "data_nacemento" : 946854000000,
-  "nacionalidade" : "Aleman",
-  "id_equipo" : 1
-}, {
-  "id_xogador" : 2,
   "nome" : "Jugador 1",
   "apellidos" : "Apellido 1",
   "posicion" : "Delantero",
   "data_nacemento" : 946681200000,
   "nacionalidade" : "Español",
-  "id_equipo" : 2
-}, {
-  "id_xogador" : 3,
-  "nome" : "Jugador 2",
-  "apellidos" : "Apellido 3",
-  "posicion" : "Defensa",
-  "data_nacemento" : 946854000000,
-  "nacionalidade" : "Aleman",
-  "id_equipo" : 3
+  "id_equipo" : 1
 } ]

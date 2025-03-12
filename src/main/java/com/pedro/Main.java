@@ -47,8 +47,22 @@ public class Main {
         List<Xogador> xogadores = importadorService.leerJson("xogadores.json", Xogador[].class);
 
         // Insertar datos en MongoDB
-        MongoDBService mongoDBService = new MongoDBService();
-        mongoDBService.insertarEquipos(equipos);
-        mongoDBService.insertarXogadores(xogadores);
+        MongoDBService mongoDBService = new MongoDBService(); // Abre la conexión aquí
+        try {
+            if (equipos != null) {
+                mongoDBService.insertarEquipos(equipos);
+            } else {
+                System.out.println("Error: No se pudieron cargar los equipos desde el JSON.");
+            }
+
+            if (xogadores != null) {
+                mongoDBService.insertarXogadores(xogadores);
+            } else {
+                System.out.println("Error: No se pudieron cargar los xogadores desde el JSON.");
+            }
+        } finally {
+            // Cerrar la conexión al final
+            mongoDBService.close();
+        }
     }
 }
