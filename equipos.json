@@ -1,0 +1,13 @@
+[ {
+  "id_equipo" : 1,
+  "nome" : "Equipo B",
+  "cidade" : "Ciudad B"
+}, {
+  "id_equipo" : 2,
+  "nome" : "Equipo A",
+  "cidade" : "Ciudad A"
+}, {
+  "id_equipo" : 3,
+  "nome" : "Equipo B",
+  "cidade" : "Ciudad B"
+} ]
